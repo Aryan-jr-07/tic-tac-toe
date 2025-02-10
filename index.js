@@ -45,7 +45,9 @@ function handleCellClick(event) {
     if (!gameActive || gameBoard[index] !== "") return;
 
     gameBoard[index] = currentPlayer;
-    cell.textContent = currentPlayer;
+
+    // Add X or O with a span element for animation
+    cell.innerHTML = `<span>${currentPlayer}</span>`;
     cell.classList.add("taken");
 
     if (checkWinner()) return;
@@ -62,7 +64,7 @@ function resetGame() {
     statusText.textContent = `Player X's Turn`;
 
     cells.forEach(cell => {
-        cell.textContent = "";
+        cell.innerHTML = "";
         cell.classList.remove("winner", "taken");
     });
 }
