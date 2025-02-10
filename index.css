@@ -1,0 +1,27 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: aqua;
+  color: red;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.cell {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  background: lightgray;
+  cursor: pointer;
+}
+.cell.taken {
+  pointer-events: none;
+}
