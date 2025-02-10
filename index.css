@@ -25,3 +25,24 @@ body {
 .cell.taken {
   pointer-events: none;
 }
+
+.winner {
+  background-color: #4CAF50 !important; /* Green */
+  color: white;
+  font-size: 2rem;
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 10px green; }
+  100% { box-shadow: 0 0 20px lime; }
+}
+.confetti {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url('https://i.gifer.com/7VE.gif');
+  background-size: cover;
+  z-index: 9999;
+  pointer-events: none;
+}
