@@ -1,85 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=OCR+A&display=swap');
+
+/* General Page Styling */
 body {
-  font-family: 'Arial', sans-serif;
-  text-align: center;
-  background: linear-gradient(120deg, #4A00E0, #8E2DE2);
-  color: white;
-  margin: 0;
-  padding: 20px;
+    background: #f4f4f4;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background 0.5s ease-in-out;
 }
+
+/* Heading Text */
 h1 {
-  font-size: 2.5rem;
-  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    font-family: 'OCR A', monospace;
+    font-size: 24px;
+    color: #333;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.board {
-  display: grid;
-  grid-template-columns: repeat(3, 100px);
-  grid-gap: 10px;
-  justify-content: center;
-  margin: 20px auto;
-  padding: 10px;
-}
-
-.cell {
-  width: 100px;
-  height: 100px;
-  background: white;
-  border-radius: 10px;
-  font-size: 2.5rem;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: 0.3s;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  position: relative;
-  user-select: none;
-}
-
-.cell:hover {
-  background: rgba(255, 255, 255, 0.8);
-}
-
-.cell span {
-  font-size: 2.5rem;
-  font-weight: bold;
-  display: inline-block;
-  transform: scale(0);
-  animation: pop 0.2s ease-in-out forwards;
-}
-
-@keyframes pop {
-  0% { transform: scale(0); opacity: 0; }
-  100% { transform: scale(1); opacity: 1; }
-}
-
-.winner {
-  background: gold !important;
-  animation: glow 0.5s infinite alternate;
-}
-
-@keyframes glow {
-  0% { box-shadow: 0 0 10px gold; }
-  100% { box-shadow: 0 0 20px orange; }
-}
-
-#status {
-  font-size: 1.5rem;
-  margin: 15px 0;
-}
-
-#reset {
-  padding: 10px 20px;
-  font-size: 1rem;
-  color: white;
-  background: #ff5722;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#reset:hover {
-  background: #e64a19;
+/* Highlighted "SPACE" */
+.highlight {
+    background: #5A0BE0;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
 }
