@@ -37,7 +37,7 @@ function checkWinner() {
     }
 
     if (roundWon) {
-        statusText.textContent = `🎉 Player ${currentPlayer} Wins! 🎉`;
+        statusText.textContent = ` Player ${currentPlayer} Wins! `;
         gameActive = false;
 
         // winning cells
@@ -50,7 +50,7 @@ function checkWinner() {
     }
 
     if (!board.includes("")) {
-        statusText.textContent = "It's a Draw! 😐";
+        statusText.textContent = "It's a Draw! ";
         gameActive = false;
         return;
     }
