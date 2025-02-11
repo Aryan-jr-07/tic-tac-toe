@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=OCR+A&display=swap');
 
-/* General Page Styling */
 body {
     background: #f4f4f4;
     height: 100vh;
@@ -9,25 +8,23 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    transition: background 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
-/* Heading Text */
 h1 {
     font-family: 'OCR A', monospace;
     font-size: 24px;
     color: #333;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.8); 
     padding: 10px 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Highlighted "SPACE" */
 .highlight {
     background: #5A0BE0;
     color: white;
     padding: 4px 8px;
     border-radius: 4px;
-    font-weight: bold;
+    font-weight: bold; 
 }
